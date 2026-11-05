@@ -1,0 +1,25 @@
+# Raw dataset: don't commit it (license + size). The README explains how to
+# re-download it (SOCOFing via kagglehub/Kaggle CLI).
+data/
+
+# Large binary model checkpoints: don't commit to git. Upload these as a
+# GitHub Release asset or alongside the Zenodo deposit instead.
+*.pt
+*.pth
+results/**/checkpoints/
+
+# Bulk generated synthetic image dumps (thousands of PNGs) - keep sample
+# grids (results/**/samples/) but not a full generate_synthetic.py output dir.
+data/synthetic_fingerprints/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+venv/
+*.egg-info/
+
+# results/*.csv, results/**/metrics.json, results/**/*.png (sample grids,
+# confusion matrix, ROC curve), results/**/split.json ARE meant to be
+# committed — they're the evidence the paper's numbers come from.
+

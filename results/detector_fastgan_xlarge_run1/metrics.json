@@ -1,0 +1,18 @@
+{
+  "n_real_test": 900,
+  "n_synthetic_test": 300,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "roc_auc": 1.0,
+  "APCER_FAR": 0.0,
+  "BPCER_FRR": 0.0,
+  "confusion_matrix": {
+    "TN_real_as_real": 900,
+    "FP_real_as_synthetic": 0,
+    "FN_synthetic_as_real": 0,
+    "TP_synthetic_as_synthetic": 300
+  },
+  "fid": 155.90802055879294
+}
